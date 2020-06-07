@@ -10,10 +10,12 @@
 </head>
 
 <body>
+    <div class="screen" onclick="toggleMenu()"></div>
 
     <header class="main-header flex space-between">
         <nav class="main-nav container flex align-center ">
             <div class=" logo "> <span class="B">B</span>login<span class="dote">.</span></div>
+            <button class="btn-menu" onclick="toggleMenu()">☰</button>
             <ul class="menu flex clean-list">
                 <li class="flex align-center"> <a href="# "><span class="J">J</span>ournal</a></li>
                 <li class="flex align-center"> <a href="# "><span class="A">A</span>bout</a></li>
@@ -82,7 +84,11 @@
             </ul>
         </section>
     </footer>
-
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open');
+        }
+    </script>
 </body>
 
 </html>
